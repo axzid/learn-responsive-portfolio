@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zulfikar personal website</title>
@@ -19,6 +20,9 @@
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">Team</a></li>
             </ul>
+            <!-- bars buat navigation -->
+            <div class="toggle"></div>
+
         </nav>
         <!-- text dan buttton  -->
         <div class="text-container">
@@ -107,6 +111,19 @@
         </div>
         <p>Copyright by Alexander Zulfikar 2020</p>
     </footer>
+    <!-- jquesry  -->
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.toggle').click(function(){
+            $('.toggle').toggleClass('active')
+            $('nav').toggleClass('active')
+        })
+    })
+
+    
+    
+    </script>
     
     
 </body>
